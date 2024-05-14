@@ -1,0 +1,11 @@
+---
+ - name: Create a file with name pakirsab
+   tasks:
+   - name: Creating file
+     file:
+       path: /tmp/pakirsab.txt
+       state: touch
+       mode: 0777
+   - debug: 
+        msg: " created file"
+...
